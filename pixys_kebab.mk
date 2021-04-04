@@ -24,13 +24,12 @@ $(call inherit-product, device/oneplus/kebab/device.mk)
 # Inherit some common PixysOS stuff.
 $(call inherit-product, vendor/pixys/config/common_full_phone.mk)
 
-TARGET_INCLUDE_GAPPS := true
+# PixysOS Properties
 TARGET_GAPPS_ARCH := arm64
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-TARGET_INCLUDE_STOCK_ARCORE := true
-
-# Boot Animation
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := pixys_kebab
