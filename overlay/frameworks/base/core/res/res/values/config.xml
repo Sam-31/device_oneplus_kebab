@@ -377,9 +377,6 @@
          -->
     <bool name="config_fillMainBuiltInDisplayCutout">true</bool>
 
-    <!-- Show a custom view for FOD -->
-    <bool name="config_needCustomFODView">true</bool>
-
     <!-- Like config_mainBuiltInDisplayCutout, but this path is used to report the
          one single bounding rect per device edge to the app via
          {@link DisplayCutout#getBoundingRect}. Note that this path should try to match the visual
