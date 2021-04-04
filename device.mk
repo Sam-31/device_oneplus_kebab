@@ -54,6 +54,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     OnePlus8TWifiOverlay
 
+# FOD animations
+TARGET_WANTS_FOD_ANIMATIONS := true
+
 # API Level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
