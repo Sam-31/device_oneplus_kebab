@@ -28,7 +28,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-aosp
+    $(LOCAL_PATH)/overlay-pixys
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
@@ -49,6 +49,9 @@ PRODUCT_PACKAGES += \
 # OPFeature
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/odm_feature_list:$(TARGET_COPY_OUT_ODM)/etc/odm_feature_list
+
+# FOD animations
+TARGET_WANTS_FOD_ANIMATIONS := true
 
 # Wifi Overlay
 PRODUCT_PACKAGES += \
